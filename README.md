@@ -43,7 +43,7 @@
 
 ## Motion_Control_Feedback_Algorithm(运动控制反馈数据处理算法系列)
 
-> PID
+> ### PID
 
 |document                        |Code.c                                                         |Code.h                                                                           |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -51,14 +51,14 @@
 |                                |[PID2.c](ALGORITHM\Motion_Control_Feedback_Algorithm/PID2.c)                       |[PID2.h](ALGORITHM\Motion_Control_Feedback_Algorithm/PID2.h)                                         |
 |                                |[PID3.c](ALGORITHM\Motion_Control_Feedback_Algorithm/PID3.c)                       |[PID3.h](ALGORITHM\Motion_Control_Feedback_Algorithm/PID3.h)                                         |
 
-> LQR
+> ### LQR
 
 |document                        |Code.c                                                         |Code.h                                                                           |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|
 |MPC                             |[MPC1.c]                                                       |[MPC1.h];                                                                        |
 |                                |                                                               |                                                                                 |
 
-> MPC
+> ### MPC
 
 |document                        |Code.c                                                         |Code.h                                                                           |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -71,7 +71,7 @@
 
 ## Communication_Formatting_Algorithm(通讯接受格式化算法系列)
 
->USART
+> ### USART
 >
 |document                        |Code.c                                                         |Code.h                                                                                                              |
 |--------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@
 |USART_IT(重映射+中断打包接发)     |[USART_IT.c](ALGORITHM/Communication_Formatting_Algorithm/USART/usart.c)                  |[USART_IT.h](ALGORITHM/Communication_Formatting_Algorithm/USART/usart.h)                              |
 |USART(环形队列)                   |                                                                |                                                                                                                   |
 
->SBUS系列
+> ### SBUS系列
 >
 |document                        |Code.c                                                         |Code.h                                                                                                              |
 |--------------------------------|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -124,7 +124,7 @@
 
 ## Motor_Drive_Control_Usage(电机驱动算法系列)
 
-> PWM驱动控制
+> ### PWM驱动控制
 > 
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
@@ -132,8 +132,11 @@
 |stepmotor(步进电机-tb6600驱动逻辑)|[gpio_stepmotor.c](ALGORITHM/Motor_Drive_Control_Usage/STEPMOTOR/gpio_stepmotor.c)               |[gpio_stepmotor.h](ALGORITHM/Motor_Drive_Control_Usage/STEPMOTOR/gpio_stepmotor.h)     |引脚电平反转           |
 |stepmotor(步进电机-tb6600驱动逻辑)|[pwm_stepmotor.c](ALGORITHM/Motor_Drive_Control_Usage/STEPMOTOR/pwm_stepmotor.c)                |[pwm_stepmotor.h](ALGORITHM/Motor_Drive_Control_Usage/STEPMOTOR/pwm_stepmotor.h)                           |时钟电平反转(PWM)                    |
 |snail2305(Dji_2305-c615驱动逻辑) |                                                               |                                                                                 |PWM                                | 
+|舵机                                |                                                               |                                                                                 |                                      |
+|                                |                                                               |                                                                                 |                                     |
 
-> CAN驱动控制
+
+> ### CAN驱动控制
 > 
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                                                                                     |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -150,13 +153,22 @@
 |                                |[M6020_bsp_can.c](ALGORITHM/Motor_Drive_Control_Usage/M6020DRVCode/bsp_can.c)                 |[M6020_bsp_can.c](ALGORITHM/Motor_Drive_Control_Usage/M6020DRVCode/bsp_canh)                                  |初始化于MX_init之后                    |
 |                                |[M6020_can_receive.c](ALGORITHM/Motor_Drive_Control_Usage/M6020DRVCode/CAN_receive6020.c)     |[M6020_can_receive.c](ALGORITHM/Motor_Drive_Control_Usage/M6020DRVCode/CAN_receive6020.h)                      |控制电压大小范围(-30000,30000)        |
 |                                |                                                               |                                                                                 |                                      |
-|                                |                                                               |                                                                                 |                                     |> [返回目录](#<返回目录>) 
+|                                |                                                               |                                                                                 |                                     |
 
-<a id="<Other_Module_Usage(其他模块驱动算法系列)>"></a>
+> ### USART驱动控制
+> 
+|document                        |Code.c                                                         |Code.h                                                                           |other_info                                                                                     |
+|--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+|总线舵机                         |                                                               |                                                                                 |                                                                                               |
+|                                |                                                               |                                                                                 |                                                                                           |
+
+> [返回目录](#<返回目录>) 
+
+<a id="<Other_Module_Usage(其他模块驱动算法系列)>"></a> 
 
 ## Other_Module_Usage(其他模块驱动算法系列)
 
-> OLED
+> ### OLED
 >
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
@@ -166,12 +178,40 @@
 |OLEDFONT2                       |[OLEDFONT2.c](ALGORITHM/Other_Module_Usage/OLED/OLED_FONT.c)             |[OLEDFONT2.h](ALGORITHM/Other_Module_Usage/OLED/OLED_FONT.h)                               |                                    |   
 |                                |                                                               |                                                                                 |                                    |  
 
-> DELAY
+> ### DELAY
 >
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
 |HAL_Delay_us(微秒延时)           |[HAL_Delay_us.c](ALGORITHM/Other_Module_Usage/DELAY/HAL_Delay_us.c)       |[HAL_Dealy_us.h](ALGORITHM/Other_Module_Usage/DELAY/HAL_Delay_us.h)               |                                   |
 |                                |                                                               |                                                                                 |                                    |   
+
+> ### MPU6050
+>
+|document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
+|--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
+|MPU6050                         |[MPU6050.c](ALGORITHM/Other_Module_Usage/MPU6050/MPU6050.c)    |[MPU6050.h](ALGORITHM/Other_Module_Usage/MPU6050/MPU6050.h)                      |                                    |  
+|Quaternion                      |[Quaternion.c](ALGORITHM/Other_Module_Usage/MPU6050/Quaternion.c)|[Quaternion.h](ALGORITHM/Other_Module_Usage/MPU6050/Quaternion.h)                  |                                    |  
+|                                |                                                               |                                                                                 |                                    |  
+> ### huiduchuangan（八路灰度传感器）
+>
+|document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
+|--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
+|huiduchuangan                   |[huiduchuangan.c](ALGORITHM/Other_Module_Usage/huiduchuangan/huiduchuangan.c) |[huiduchuangan.h](ALGORITHM/Other_Module_Usage/huiduchuangan/huiduchuangan.h)|                         |  
+|                                |                                                               |                                                                                 |                                    |  
+
+> ### HC-SR04
+>
+|document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
+|--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
+|HC-SR04                         |[HC-SR04.c](ALGORITHM/Other_Module_Usage/HC-SR04/HC-SR04.c)    |[HC-SR04.h](ALGORITHM/Other_Module_Usage/HC-SR04/HC-SR04.h)                  |                                    |  
+|                                |                                                               |                                                                                 |                                    |  
+
+> ### BLUETOOTH(蓝牙)
+>
+|document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
+|--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
+|BLUETOOTH                       |[Blu.c](ALGORITHM/Other_Module_Usage/BLUETOOTH/Blu.c)          |[Blu.h](ALGORITHM/Other_Module_Usage/BLUETOOTH/Blu.h)                          |                                    |  
+|                                |                                                               |                                                                                 |                                    |  
 
 > [返回目录](#<返回目录>)
 
