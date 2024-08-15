@@ -160,17 +160,17 @@
 >
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
-|OLED1(IIC)                      |[OLED1.c(IIC)](usual_control_algorithm/bsp_oled.c)             |[OLED1.h(IIC)](usual_control_algorithm/bsp_oled.h)                               |                                    |
-|OLEDFONT1                       |                                                               |[OLEDFONT1.h](usual_control_algorithm/oledfont.h)                                |                                    |
-|OLED2(IIC)-4Pin                 |[OLED2.c(IIC)](usual_control_algorithm/OLED.c)                 |[OLED2.h(IIC)](usual_control_algorithm/OLED.h)                                   |                                    |
-|OLEDFONT2                       |[OLEDFONT2.c](usual_control_algorithm/OLED_FONT.c)             |[OLEDFONT2.h](usual_control_algorithm/OLED_FONT.h)                               |                                    |   
-|                                |                                                               |                                                                                 |                                    |   
+|OLED1(IIC)                      |[OLED1.c(IIC)](ALGORITHM/Other_Module_Usage/OLED/bsp_oled.c)             |[OLED1.h(IIC)](ALGORITHM/Other_Module_Usage/OLED/bsp_oled.h)                               |                                    |
+|OLEDFONT1                       |                                                               |[OLEDFONT1.h](ALGORITHM/Other_Module_Usage/OLED/oledfont.h)                                |                                    |
+|OLED2(IIC)-4Pin                 |[OLED2.c(IIC)](ALGORITHM/Other_Module_Usage/OLED/OLED.c)                 |[OLED2.h(IIC)](ALGORITHM/Other_Module_Usage/OLED/OLED.h)                                   |                                    |
+|OLEDFONT2                       |[OLEDFONT2.c](ALGORITHM/Other_Module_Usage/OLED/OLED_FONT.c)             |[OLEDFONT2.h](ALGORITHM/Other_Module_Usage/OLED/OLED_FONT.h)                               |                                    |   
+|                                |                                                               |                                                                                 |                                    |  
 
 > DELAY
 >
 |document                        |Code.c                                                         |Code.h                                                                           |other_info                         |
 |--------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------|
-|HAL_Delay_us(微秒延时)           |[HAL_Delay_us.c](ALGORITHM/Other_Module_Usage/HAL_Dealy_us.c)       |[HAL_Dealy_us.h](ALGORITHM/Other_Module_Usage/HAL_Dealy_us.h)               |                                   |
+|HAL_Delay_us(微秒延时)           |[HAL_Delay_us.c](ALGORITHM/Other_Module_Usage/DELAY/HAL_Delay_us.c)       |[HAL_Dealy_us.h](ALGORITHM/Other_Module_Usage/DELAY/HAL_Delay_us.h)               |                                   |
 |                                |                                                               |                                                                                 |                                    |   
 
 > [返回目录](#<返回目录>)
